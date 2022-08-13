@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="py-12 px-24 min-h-screen">
+    <div className="container max-w-screen-xl mx-auto py-6 px-12 md:py-12 md:px-24 min-h-screen">
       <Navbar />
       <Landing />
     </div>

@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo.svg';
 import Button from '../Ui/Button';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const menuOpenHandler = () => {
     setIsOpen((prevState) => !prevState);
   };
@@ -23,7 +24,6 @@ const Navbar = () => {
           Resources
         </li>
       </ul>
-
       <div className=" gap-x-5 hidden md:flex">
         <button className="text-GrayishViolet font-bold hover:text-black transition-colors">
           Login
