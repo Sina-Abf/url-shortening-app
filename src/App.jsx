@@ -1,3 +1,5 @@
+import Boost from './components/Boost/Boost';
+import Footer from './components/Footer/Footer';
 import Landing from './components/Landing/Landing';
 import Navbar from './components/Navbar/Navbar';
 import Statistics from './components/Statistics/Statistics';
@@ -10,6 +12,8 @@ function App() {
       <Landing />
       <Url />
       <Statistics />
+      <Boost />
+      <Footer />
     </div>
   );
 }

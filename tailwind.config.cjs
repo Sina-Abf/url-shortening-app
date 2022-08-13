@@ -9,6 +9,7 @@ module.exports = {
         DarkViolet: 'hsl(257, 27%, 26%)',
         GrayishViolet: 'hsl(257, 7%, 63%)',
         Gray: 'hsl(0, 0%, 75%)',
+        VeryDarkBlue: 'hsl(255, 11%, 22%)',
       },
     },
   },
