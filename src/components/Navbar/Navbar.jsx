@@ -14,17 +14,17 @@ const Navbar = () => {
         <li>
           <img src={logo} />
         </li>
-        <li className="hidden md:block hover:text-black transition-colors duration-300 cursor-pointer">
+        <li className="hidden lg:block hover:text-black transition-colors duration-300 cursor-pointer">
           Features
         </li>
-        <li className="hidden md:block hover:text-black transition-colors duration-300 cursor-pointer">
+        <li className="hidden lg:block hover:text-black transition-colors duration-300 cursor-pointer">
           Pricing
         </li>
-        <li className="hidden md:block hover:text-black transition-colors duration-300 cursor-pointer">
+        <li className="hidden lg:block hover:text-black transition-colors duration-300 cursor-pointer">
           Resources
         </li>
       </ul>
-      <div className=" gap-x-5 hidden md:flex">
+      <div className=" gap-x-5 hidden lg:flex">
         <button className="text-GrayishViolet font-bold hover:text-black transition-colors">
           Login
         </button>
@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <div
         onClick={menuOpenHandler}
-        className="block cursor-pointer md:hidden text-GrayishViolet"
+        className="block cursor-pointer lg:hidden text-GrayishViolet"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <ul className="flex flex-col gap-y-4 items-center rounded-xl w-1/2 absolute text-white h-1/2 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-DarkViolet">
+        <ul className="lg:hidden flex flex-col gap-y-4 items-center rounded-xl w-1/2 absolute text-white h-1/2 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-DarkViolet">
           <li className="transition-colors duration-300 cursor-pointer mt-10">
             Features
           </li>
