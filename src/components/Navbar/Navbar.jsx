@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between mb-20 gap-x-4">
+    <nav className="flex justify-between mb-20 gap-x-4 py-6 px-12 md:py-12 md:px-24">
       <ul className="flex items-center gap-x-6 text-GrayishViolet font-bold">
         <li>
           <img src={logo} />
@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <ul className="lg:hidden flex flex-col gap-y-4 items-center rounded-xl w-1/2 absolute text-white h-1/2 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-DarkViolet">
+        <ul className="lg:hidden flex flex-col gap-y-4 items-center rounded-xl w-1/2 absolute text-white h-1/2 top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 bg-DarkViolet ">
           <li className="transition-colors duration-300 cursor-pointer mt-10">
             Features
           </li>

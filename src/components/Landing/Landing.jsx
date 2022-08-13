@@ -4,7 +4,7 @@ import heroImg from '../../assets/images/illustration-working.svg';
 
 const Landing = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row lg:justify-between">
+    <section className="flex flex-col-reverse lg:flex-row lg:justify-between py-6 px-12 md:py-12 md:px-24">
       <div className="flex flex-col items-center text-center lg:text-start lg:block">
         <div className="lg:w-3/4 mb-2">
           <span className="font-bold text-6xl">
