@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Card from '../Ui/Card';
 import brand from '../../assets/images/icon-brand-recognition.svg';
 import detailedRecords from '../../assets/images/icon-detailed-records.svg';
 import customize from '../../assets/images/icon-fully-customizable.svg';
+import { useInView } from 'framer-motion';
 
 const Statistics = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className="bg-GrayishViolet/20">
       <div className=" flex flex-col items-center justify-center">
@@ -17,7 +21,14 @@ const Statistics = () => {
         </p>
       </div>
       <div className="relative flex flex-col items-center lg:flex-row lg:gap-x-8 w-2/3  mx-auto">
-        <div className="w-2 h-2/3 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10" />
+        <div
+          style={{
+            opacity: isInView ? '1' : '0',
+            transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+          }}
+          ref={ref}
+          className="w-2 h-2/3 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10"
+        />
         <Card
           icon={brand}
           circleClassName="mt-20 lg:mt-0 translate-y-2/3 lg:translate-y-1/2 lg:-translate-x-20"

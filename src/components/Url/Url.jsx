@@ -3,6 +3,7 @@ import Button from '../Ui/Button';
 import axios from 'axios';
 import UrlItem from './UrlItem';
 import Spinner from '../Ui/Spinner';
+import { motion } from 'framer-motion';
 
 const Url = () => {
   const [inputLink, setInputLink] = useState('');
@@ -66,7 +67,7 @@ const Url = () => {
   }, [isDoneTyping]);
 
   return (
-    <section className="px-12 pb-4 bg-DarkViolet rounded-lg w-11/12 mx-auto md:px-24 ">
+    <section className=" px-12 pb-4 bg-DarkViolet rounded-lg w-11/12 mx-auto md:px-24 ">
       <form
         onSubmit={formSubmitHandler}
         className="py-10 flex flex-col gap-y-4 lg:flex-row lg:gap-x-4"
@@ -92,13 +93,12 @@ const Url = () => {
       {!newsetData.length !== 0 &&
         newsetData.map((url) => {
           return (
-            <ul>
+            <motion.ul key={Math.random()}>
               <UrlItem
-                key={Math.random()}
                 initialUrl={url.initialUrl}
                 shortedLink={url.shortedLink}
               />
-            </ul>
+            </motion.ul>
           );
         })}
     </section>
