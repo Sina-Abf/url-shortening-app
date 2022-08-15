@@ -7,17 +7,17 @@ import customize from '../../assets/images/icon-fully-customizable.svg';
 const Statistics = () => {
   return (
     <section className="bg-GrayishViolet/20">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="translate-y-24 lg:translate-y-24 font-bold text-2xl lg:text-4xl mb-2">
+      <div className=" flex flex-col items-center justify-center">
+        <h1 className="font-bold mt-10 text-2xl lg:text-4xl mb-2">
           Advanced Statistics
         </h1>
-        <p className="translate-y-24 lg:translate-y-24 text-md text-GrayishViolet w-5/12 md:w-1/4 text-center">
+        <p className="text-md text-GrayishViolet w-5/12 md:w-1/4 text-center">
           Track how your links are performing across the web with our advanced
           stastics dashboard.
         </p>
       </div>
       <div className="relative flex flex-col items-center lg:flex-row lg:gap-x-8 w-2/3  mx-auto">
-        <div className="w-2 h-1/2 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10" />
+        <div className="w-2 h-2/3 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10" />
         <Card
           icon={brand}
           circleClassName="mt-20 lg:mt-0 translate-y-2/3 lg:translate-y-1/2 lg:-translate-x-20"

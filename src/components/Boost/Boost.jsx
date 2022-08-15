@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../Ui/Button';
-import bg from '../../assets/images/bg-shorten-mobile.svg';
 const Boost = () => {
   return (
     <div className="w-full bg-DarkViolet text-center p-8 text-white">
