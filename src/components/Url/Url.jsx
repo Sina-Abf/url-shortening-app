@@ -93,12 +93,12 @@ const Url = () => {
       {!newsetData.length !== 0 &&
         newsetData.map((url) => {
           return (
-            <motion.ul key={Math.random()}>
+            <ul key={Math.random()}>
               <UrlItem
                 initialUrl={url.initialUrl}
                 shortedLink={url.shortedLink}
               />
-            </motion.ul>
+            </ul>
           );
         })}
     </section>

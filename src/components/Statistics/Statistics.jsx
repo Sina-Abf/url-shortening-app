@@ -10,7 +10,15 @@ const Statistics = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="bg-GrayishViolet/20">
+    <section
+      style={{
+        transform: isInView ? 'none' : 'translateX(-200px)',
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+      ref={ref}
+      className="bg-GrayishViolet/20"
+    >
       <div className=" flex flex-col items-center justify-center">
         <h1 className="font-bold mt-10 text-2xl lg:text-4xl mb-2">
           Advanced Statistics
@@ -20,11 +28,11 @@ const Statistics = () => {
           stastics dashboard.
         </p>
       </div>
-      <div className="relative flex flex-col items-center lg:flex-row lg:gap-x-8 w-2/3  mx-auto">
+      <div className="relative flex flex-col items-center lg:flex-row lg:gap-x-8 w-2/3 mx-auto pb-20">
         <div
           style={{
-            opacity: isInView ? '1' : '0',
-            transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+            opacity: isInView ? 1 : 0,
+            transition: 'all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 2s',
           }}
           ref={ref}
           className="w-2 h-2/3 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10"

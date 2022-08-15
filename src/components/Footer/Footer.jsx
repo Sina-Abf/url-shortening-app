@@ -27,18 +27,28 @@ const Footer = () => {
         <li>Careers</li>
         <li>Contact</li>
       </ul>
-      <div className="flex items-center gap-x-5">
-        <a href="">
-          <img src={facebook} />
-        </a>
-        <a href="">
-          <img src={twitter} />
-        </a>
-        <a href="">
-          <img src={pintrest} />
-        </a>
-        <a href="">
-          <img src={instagram} />
+      <div className="flex flex-col items-center gap-y-5">
+        <div className="flex items-center gap-x-5">
+          <a href="">
+            <img src={facebook} />
+          </a>
+          <a href="">
+            <img src={twitter} />
+          </a>
+          <a href="">
+            <img src={pintrest} />
+          </a>
+          <a href="">
+            <img src={instagram} />
+          </a>
+        </div>
+        <a
+          href="https://github.com/Sina-Abf"
+          target="_blank"
+          rel="noreferrer"
+          className="dark:text-white underline"
+        >
+          By Sina Abdollahi &copy;
         </a>
       </div>
     </footer>
