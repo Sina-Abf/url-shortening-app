@@ -1,7 +1,8 @@
-import React from 'react';
+import { useState } from 'react';
 import Button from '../Ui/Button';
 import { motion } from 'framer-motion';
 const UrlItem = (props) => {
+  const [isCopied, setIsCopied] = useState(false);
   return (
     <motion.li className="bg-white divide-y-2 lg:divide-y-0 w-full p-2 flex flex-col gap-y-2 mb-4 lg:mb-0 lg:gap-y-0 lg:flex-row lg:items-center lg:justify-between lg:mb-2 rounded-lg">
       <h1>{props.initialUrl}</h1>
@@ -13,7 +14,16 @@ const UrlItem = (props) => {
         >
           {props.shortedLink}
         </a>
-        <Button className="w-full rounded-md">Copy</Button>
+        <Button
+          onClick={() => {
+            navigator.clipboard.writeText(props.shortedLink);
+            setIsCopied(true);
+          }}
+          className={`w-full rounded-md ${isCopied ? 'bg-green-500' : ''}`}
+        >
+          {!isCopied && 'Copy'}
+          {isCopied && 'Copied!'}
+        </Button>
       </div>
     </motion.li>
   );
