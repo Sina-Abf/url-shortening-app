@@ -20,7 +20,7 @@ const Statistics = () => {
         <div className="w-2 h-1/2 lg:h-5/6 bg-Cyan absolute lg:rotate-90 top-60 lg:top-10 lg:left-2/4 -z-10" />
         <Card
           icon={brand}
-          circleClassName="mt-10 lg:mt-0 translate-y-3/4 lg:translate-y-1/2 lg:-translate-x-20"
+          circleClassName="mt-20 lg:mt-0 translate-y-2/3 lg:translate-y-1/2 lg:-translate-x-20"
           className="mt-6 lg:mt-0 p-3"
           title="Brand Recognition"
           subtitle="Boost your brand recognition with each click. Generic links don't mean
